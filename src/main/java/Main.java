@@ -10,13 +10,17 @@ import utils.UserDistanceUtil;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class Main {
     private static final String url = "https://jsonplaceholder.typicode.com";
 
     public static void main(String[] args) {
-        OkHttpClient httpClient = new OkHttpClient.Builder().build();
+        OkHttpClient httpClient = new OkHttpClient.Builder()
+                .callTimeout(30, TimeUnit.SECONDS)
+                .retryOnConnectionFailure(true)
+                .build();
         List<User> users = downloadData(httpClient);
 
         for (User user : users) {
