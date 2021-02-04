@@ -19,6 +19,7 @@ import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
 class PostTitleDuplicatesUtilTest {
+
     @Mock
     private User user;
     @Mock

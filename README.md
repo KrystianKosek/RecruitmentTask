@@ -1,5 +1,3 @@
-# OpenX_Intern_Task
-
 The task was about downloading users and posts in a json format from an endpoint and then parsing the data and connecting posts with users.
 With the given data I had to return how many posts each user wrote and check the posts for duplicates.
 Finally, I found the nearest neighbor for each user. <br/>

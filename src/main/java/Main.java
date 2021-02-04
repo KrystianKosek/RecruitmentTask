@@ -73,7 +73,7 @@ public class Main {
                 users.add(user);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return users;

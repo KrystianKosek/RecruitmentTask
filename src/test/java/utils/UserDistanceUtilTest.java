@@ -18,6 +18,7 @@ import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
 class UserDistanceUtilTest {
+
     @Mock(answer = Answers.RETURNS_DEEP_STUBS)
     private User user;
 
